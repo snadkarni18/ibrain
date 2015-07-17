@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     erb:selector
   end
   
-  get '/survey' do
+  get '/survey.erb' do
     erb:survey
   end
   
@@ -42,6 +42,28 @@ class ApplicationController < Sinatra::Base
    get '/programming.erb' do
     erb:programming
   end
-  
-  
+  get '/optimistic.erb' do
+    erb:optimistic
+  end
+  get '/pestimistic.erb' do
+    erb:pestimistic
+  end
+  get '/difference.erb' do
+    erb:difference
+end
+  get '/anx.erb' do
+    erb:anx
+  end
+  get '/alone.erb' do
+    erb:alone
+  end
+  get '/noalone.erb' do
+    erb:noalone
+  end
+  get '/advisor.erb' do
+    erb:advisor
+  end
+  get '/dropout.erb' do
+  erb:dropout
+end
 end
